@@ -3116,7 +3116,7 @@
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/bg.jpg);
+			background-image: url(../../images/main5/1.jpg);
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3356,7 +3356,7 @@
 				letter-spacing: .25rem;
 			}
 
-				.wrapper.style3 p:after {
+				/* .wrapper.style3 p:after {
 					content: '';
 					position: absolute;
 					margin: auto;
@@ -3366,7 +3366,7 @@
 					width: 50%;
 					height: 1px;
 					background-color: rgba(255, 255, 255, 0.5);
-				}
+				} */
 
 			.wrapper.style3:before {
 				-moz-transition: opacity 3s ease;
