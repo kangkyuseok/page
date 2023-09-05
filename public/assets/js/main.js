@@ -3,7 +3,16 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+document.addEventListener('DOMContentLoaded', function() {
+	document.querySelector('.animated-line').classList.add('fill');
+  });
+  
 
+  document.addEventListener('DOMContentLoaded', function() {
+	const gaugeFill = document.querySelector('.gauge-fill');
+	gaugeFill.style.width = '100%';  // 게이지를 100%로 채우는 애니메이션을 시작
+  });
+  
 var settings = {
 
 	banner: {
