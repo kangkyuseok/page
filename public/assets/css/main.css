@@ -49,11 +49,11 @@
 		-webkit-text-size-adjust: none;
 	}
 /* google map */
-/* 모바일 화면에서의 크기 */
+/* 모바일 화면에서의 크기  뀨 수정*/
 @media only screen and (max-width: 768px) {
 	#google_map {
-	  width: 375px;
-	  height: 375px;
+	  width: 360px;
+	  height: 360px;
 	}
   }
 /* Box Model */
