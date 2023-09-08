@@ -72,7 +72,7 @@
 				<!-- Form -->
 				<h3>문의하기</h3>
 
-				<form method="post" action="#" onSubmit={handleSubmit}>
+				<form method="post" action="#">
 					<div class="row uniform">
 						<div class="6u 12u$(xsmall)">
 							<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -181,7 +181,7 @@
 				email,
 				message
 			};
-
+// gyuseoggang29@gmail.com
 			try {
 				const response = await fetch('/.netlify/functions/send-email', {
 					method: 'POST',
