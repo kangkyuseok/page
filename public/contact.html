@@ -5,156 +5,252 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>SQUARE</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
 
-		
-	</head>
-	<body class="subpage">
+<head>
+	<title>SQUARE</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-		<!-- Header -->
-			<header id="header">
-				<div class="logo"><a href="/">SQUARE</a></div>
-				<!-- <a href="#menu">Menu</a> -->
-				<a href="/">Home</a></li>
-				<a href="brand.html">Brand</a></li>
-				<a href="contact.html">Contact</a>
 
+</head>
+
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="logo"><a href="/">SQUARE</a></div>
+		<!-- <a href="#menu">Menu</a> -->
+		<a href="/">Home</a></li>
+		<a href="brand.html">Brand</a></li>
+		<a href="contact.html">Contact</a>
+
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="/">Home</a></li>
+			<li><a href="brand.html">Brand</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- One -->
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>Sed amet nulla</p>
+				<h2>Contact</h2>
 			</header>
+		</div>
+	</section>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="/">Home</a></li>
-					<li><a href="brand.html">Brand</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+	<!-- Main -->
+	<div id="main" class="container">
 
-		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Sed amet nulla</p>
-						<h2>Contact</h2>
-					</header>
-				</div>
-			</section>
+		<!-- Elements -->
 
-		<!-- Main -->
-			<div id="main" class="container">
+		<div class="row 200%">
+			<div class="6u 12u$(medium)">
 
-				<!-- Elements -->
-					
-					<div class="row 200%">
-						<div class="6u 12u$(medium)">
 
-							
-							<iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1502466803527!2d127.02481187649701!3d37.50437437205477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e2e35ff431%3A0xf26679b8339643c5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmITroZwxMDXquLggODc!5e0!3m2!1sko!2skr!4v1694066299090!5m2!1sko!2skr" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe id="google_map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1502466803527!2d127.02481187649701!3d37.50437437205477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e2e35ff431%3A0xf26679b8339643c5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmITroZwxMDXquLggODc!5e0!3m2!1sko!2skr!4v1694066299090!5m2!1sko!2skr"
+					width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-								
 
-								
 
+
+
+			</div>
+			<div class="6u$ 12u$(medium)">
+
+
+
+				<!-- Form -->
+				<h3>문의하기</h3>
+
+				<form method="post" action="#" onSubmit={handleSubmit}>
+					<div class="row uniform">
+						<div class="6u 12u$(xsmall)">
+							<input type="text" name="name" id="name" value="" placeholder="Name" />
 						</div>
-						<div class="6u$ 12u$(medium)">
+						<div class="6u$ 12u$(xsmall)">
+							<input type="email" name="email" id="email" value="" placeholder="Email" />
+						</div>
+						<!-- Break -->
+						<div class="12u$">
+							<div class="select-wrapper">
+								<select name="category" id="category">
+									<option value="">- 메일 문의 -</option>
+									<option value="1">일반 문의</option>
+									<option value="1">판매 관련 문의</option>
+									<option value="1">기술 문의</option>
+								</select>
+							</div>
+						</div>
 
-						
-
-							<!-- Form -->
-							<h3>문의하기</h3>
-
-							<form method="post" action="#">
-								<div class="row uniform">
-									<div class="6u 12u$(xsmall)">
-										<input type="text" name="name" id="name" value="" placeholder="Name" />
-									</div>
-									<div class="6u$ 12u$(xsmall)">
-										<input type="email" name="email" id="email" value="" placeholder="Email" />
-									</div>
-									<!-- Break -->
-									<div class="12u$">
-										<div class="select-wrapper">
-											<select name="category" id="category">
-												<option value="">- 메일 문의 -</option>
-												<option value="1">일반 문의</option>
-												<option value="1">판매 관련 문의</option>
-												<option value="1">기술 문의</option>
-											</select>
-										</div>
-									</div>
-
-									<!-- Break -->
-									<div class="6u 12u$(small)">
-										<input type="checkbox" id="copy" name="copy">
-										<label for="copy">내 메일로 문의사항 받기</label>
-									</div>
-									<div class="6u$ 12u$(small)">
-										<input type="checkbox" id="human" name="human" checked>
-										<label for="human">저는 로봇이 아닙니다.</label>
-									</div>
-									<!-- Break -->
-									<div class="12u$">
-										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<!-- Break -->
-									<div class="12u$">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Reset" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-
-
-							
-
-								
-
+						<!-- Break -->
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy" name="copy">
+							<label for="copy">내 메일로 문의사항 받기</label>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<input type="checkbox" id="human" name="human" checked>
+							<label for="human">저는 로봇이 아닙니다.</label>
+						</div>
+						<!-- Break -->
+						<div class="12u$">
+							<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+						</div>
+						<!-- Break -->
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="reset" value="Reset" class="alt" /></li>
+							</ul>
 						</div>
 					</div>
+				</form>
+
+
+
+
+
 
 			</div>
+		</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-				<div class="container">
-					<ul class="icons" style="color: aliceblue;">
-						<li>법인명(상호) : (주)스퀘어컴퍼니</li>
-						<li>대표 번호 : 070-4647-4827</li>
-						<li>통신판매업 신고 : 제2023-서울강남-02821호</li>
-					</ul>
-					<ul class="icons" style="color: aliceblue;">
-						<li>대표자 : 이계윤 </li>
-						<li>이메일 : elky0726@4square.co.kr</li>
-						<li>주소 : 06124 서울특별시 강남구 논현로 105길 87,(역삼동)</li>
-					</ul>
+	</div>
 
-				</div>
-			</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<ul class="icons" style="color: aliceblue;">
+				<li>법인명(상호) : (주)스퀘어컴퍼니</li>
+				<li>대표 번호 : 070-4647-4827</li>
+				<li>통신판매업 신고 : 제2023-서울강남-02821호</li>
+			</ul>
+			<ul class="icons" style="color: aliceblue;">
+				<li>대표자 : 이계윤 </li>
+				<li>이메일 : elky0726@4square.co.kr</li>
+				<li>주소 : 06124 서울특별시 강남구 논현로 105길 87,(역삼동)</li>
+			</ul>
 
-			<div class="copyright">
-				Copyright © 2021 (주)스퀘어컴퍼니. All rights reserved.
-			</div>
+		</div>
+	</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<div class="copyright">
+		Copyright © 2021 (주)스퀘어컴퍼니. All rights reserved.
+	</div>
 
-	</body>
+	<script>
+
+		const form = document.querySelector('form');
+
+		form.addEventListener('submit', async function (event) {
+			event.preventDefault();
+
+			const name = document.getElementById('name').value;
+			const email = document.getElementById('email').value;
+			const message = document.getElementById('message').value;
+			const human = document.getElementById('human').checked;
+
+			if (!name || !email || !message) {
+				alert('모든 필드를 채워주세요.');
+				return;
+			}
+
+			if (!human) {
+				alert('로봇 확인을 해주세요.');
+				return;
+			}
+
+			const payload = {
+				name,
+				email,
+				message
+			};
+
+			try {
+				const response = await fetch('/.netlify/functions/send-email', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(payload),
+				});
+
+				if (response.ok) {
+					alert('메시지가 전송되었습니다.');
+				} else {
+					alert('문제가 발생했습니다. 다시 시도해주세요.');
+				}
+			} catch (error) {
+				alert('오류가 발생했습니다: ' + error);
+			}
+		});
+
+	// 			const form = document.querySelector('form');
+
+	// 			form.addEventListener('submit', function(event) {
+	// 				event.preventDefault();
+
+	// 				const name = document.getElementById('name').value;
+	// 				const email = document.getElementById('email').value;
+	// 				const category = document.getElementById('category').value;
+	// 				const message = document.getElementById('message').value;
+	// 				const copy = document.getElementById('copy').checked;
+	// 				const human = document.getElementById('human').checked;
+
+	// 				if(!name || !email || !category || !message){
+
+	// 					alert('모든 필드를 채워주세요.');
+	// 					return;
+	// 				}
+	// 				if (!human) {
+	// 					alert('로봇 확인 해주세요.');
+	// 					return;
+	// 				}
+					
+	// 				console.log({
+    //     			name,
+    //     			email,
+    //     			category,
+    //     			message,
+    //     			copy,
+    //     			human
+    //   				});
+	// 				  if (copy) {
+    //     alert('문의사항이 복사되었습니다.');
+    //   }
+
+    //   alert('메시지가 전송되었습니다.');
+
+	// 			});
+
+
+
+	</script>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
