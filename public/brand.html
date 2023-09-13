@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="subpage">
-
+		<div class="cursor"></div>
 		<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="/">SQUARE</a></div>
@@ -129,7 +129,16 @@
 			<div class="copyright">
 				Copyright © 2021 (주)스퀘어컴퍼니. All rights reserved.
 			</div>
+<script>
+	// 커서 엘리먼트 선택
+const cursor = document.querySelector('.cursor');
 
+// 마우스 이벤트를 감지하고 커서 위치를 업데이트
+document.addEventListener('mousemove', (e) => {
+	cursor.style.left = e.pageX + 'px';
+	cursor.style.top = e.pageY + 'px';
+});
+</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
