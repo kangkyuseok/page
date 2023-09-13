@@ -17,10 +17,6 @@ app.get('/contact', (req, res) => {
 });
 
 
-// public 폴더를 static으로 설정
-// app.use(express.static(path.join(__dirname, '../public')));
-
-
 
 
 

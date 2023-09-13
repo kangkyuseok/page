@@ -2,25 +2,21 @@
 
 <html>
 	<head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-PMZNHXGJ');</script>
-	<!-- End Google Tag Manager -->
 		<title>SQUARE</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<svg width="4" height="2" viewBox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="1" cy="1" r="1" fill="#ffffff"/>
+		</svg>
 	</head>
+	
 	<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMZNHXGJ"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
+		<div class="cursor"></div>
+		<div class="cursor-png">
 		<!-- Header -->
 			<header id="header" class="alt">
+				
 				<div class="logo"><a href="/">SQUARE</a></div>
 				<!-- <a href="#menu">Menu</a> -->
 				<a href="/">Home</a></li>
@@ -118,7 +114,7 @@
 										<p style="color: black;">In Pursuit of a Mission, Anchored by Our Values.</p>
 										<!-- 미션을 추구하면서, 우리의 가치에 의해 안정되어 있습니다.
 브랜드가 미션을 달성하려고 노력하면서도 그 가치를 잃지 않는다는 것을 의미합니다. -->
-										<h2>다음 가치와 미션을 바탕으로 일합니다.</h2>
+										<h2 style="color: black;">다음 가치와 미션을 바탕으로 일합니다.</h2>
 									</header>
 									<p style="text-align: center; color: black;">혁신과 창의성을 통한 브랜드 성장<br>
 									고객과 협력 파트너 중심의 경영<br>
@@ -140,7 +136,7 @@
 										<p style="color: black;">Driven by Passion, Perfected by Purpose.</p>
 										<!-- 열정으로 움직이고, 목적으로 완성됩니다.
 브랜드가 열정과 명확한 목적을 가지고 작동한다는 것을 나타냅니다. -->
-										<h2>브랜드를 만들어 갑니다.</h2>
+										<h2 style="color: black;">브랜드를 만들어 갑니다.</h2>
 									</header>
 									<p style="text-align: center; color: black;">우리는 브랜드의 가치를 이해하며, <br>그 가치를 지속적으로 발전시키는 데 헌신합니다.</br>
 										브랜드 마스터스 지주는 혁신과 열정으로 <br>브랜드의 미래를 함께 만들어 나갈 것을 약속합니다.</p>
@@ -223,6 +219,7 @@
 		<div class="copyright">
 			Copyright © 2021 (주)스퀘어컴퍼니. All rights reserved.
 		</div>
+	</div>
 			<script>
 document.addEventListener("DOMContentLoaded", function() {
   const articles = document.querySelectorAll(".banner article");
@@ -256,6 +253,30 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(nextImage, 5000);
 });
 
+
+let mouseCursor = document.querySelector(".cursor");
+  let navLinks = document.querySelectorAll(".gnb li a"); //메뉴 링크
+  //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+  window.addEventListener("scroll", cursor);
+  window.addEventListener("mousemove", cursor);
+  //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+  function cursor(e) {
+    mouseCursor.style.left = e.pageX + "px";
+    mouseCursor.style.top = e.pageY - scrollY + "px";
+}
+
+navLinks.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+      mouseCursor.classList.add("link-grow");
+      mouseCursor.style.zIndex = "-1";
+      link.classList.add("hovered-link");
+    });
+    link.addEventListener("mouseleave", () => {
+      mouseCursor.classList.remove("link-grow");
+      mouseCursor.style.zIndex = "1000";
+      link.classList.remove("hovered-link");
+    });
+  });
 			</script>
 		<!-- Scripts -->
 			<script src="../src/App.js"></script>
