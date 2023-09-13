@@ -6,14 +6,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<svg width="4" height="2" viewBox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<!-- <svg width="4" height="2" viewBox="0 0 4 2" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<circle cx="1" cy="1" r="1" fill="#ffffff"/>
-		</svg>
+		</svg> -->
 	</head>
 	
 	<body>
 		<div class="cursor"></div>
-		<div class="cursor-png">
+		
 		<!-- Header -->
 			<header id="header" class="alt">
 				
@@ -219,7 +219,6 @@
 		<div class="copyright">
 			Copyright © 2021 (주)스퀘어컴퍼니. All rights reserved.
 		</div>
-	</div>
 			<script>
 document.addEventListener("DOMContentLoaded", function() {
   const articles = document.querySelectorAll(".banner article");
@@ -254,29 +253,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-let mouseCursor = document.querySelector(".cursor");
-  let navLinks = document.querySelectorAll(".gnb li a"); //메뉴 링크
-  //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
-  window.addEventListener("scroll", cursor);
-  window.addEventListener("mousemove", cursor);
-  //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
-  function cursor(e) {
-    mouseCursor.style.left = e.pageX + "px";
-    mouseCursor.style.top = e.pageY - scrollY + "px";
-}
+// 커서 엘리먼트 선택
+const cursor = document.querySelector('.cursor');
 
-navLinks.forEach((link) => {
-    link.addEventListener("mouseover", () => {
-      mouseCursor.classList.add("link-grow");
-      mouseCursor.style.zIndex = "-1";
-      link.classList.add("hovered-link");
-    });
-    link.addEventListener("mouseleave", () => {
-      mouseCursor.classList.remove("link-grow");
-      mouseCursor.style.zIndex = "1000";
-      link.classList.remove("hovered-link");
-    });
-  });
+// 마우스 이벤트를 감지하고 커서 위치를 업데이트
+document.addEventListener('mousemove', (e) => {
+	cursor.style.left = e.pageX + 'px';
+	cursor.style.top = e.pageY + 'px';
+});
 			</script>
 		<!-- Scripts -->
 			<script src="../src/App.js"></script>

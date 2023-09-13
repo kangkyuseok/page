@@ -4367,9 +4367,7 @@
 
 		}
 
-		.cursor-png {
-			cursor: url("assests/images/mouse/mcursor.png"), auto;
-		}
+		
 
 
 /* 기본 색상 변수에 담기 */
@@ -4393,6 +4391,7 @@
       transform-origin: 100% 100%;
       backdrop-filter: sepia(20%);
       background-size: cover;
+	
   }
   .cursor-grow {
     transform: scale(2);
