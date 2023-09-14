@@ -11,7 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	
+
 
 
 </head>
@@ -85,8 +85,7 @@
 
 						<fieldset class="pure-group">
 							<label for="message">Message: </label>
-							<textarea id="message" name="message" rows="10"
-								placeholder="문의제목 및 내용을 입력하세요."></textarea>
+							<textarea id="message" name="message" rows="10" placeholder="문의제목 및 내용을 입력하세요."></textarea>
 						</fieldset>
 
 						<fieldset class="pure-group">
@@ -127,7 +126,7 @@
 			<ul class="icons" style="color: aliceblue;">
 				<li>법인명(상호) : (주)스퀘어컴퍼니</li>
 				<li>대표 번호 : 070-4647-4827</li>
-				<li>통신판매업 신고 : 제2023-서울강남-02821호</li>
+				
 			</ul>
 			<ul class="icons" style="color: aliceblue;">
 				<li>대표자 : 이계윤 </li>
@@ -146,36 +145,36 @@
 	<iframe id="iframe1" name="iframe1" style="display:none"></iframe>
 	<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 	<script>
-        document.getElementById('submitButton').addEventListener('click', function (e) {
-            const name = document.getElementById('name').value.trim();
-            const message = document.getElementById('message').value.trim();
+		document.getElementById('submitButton').addEventListener('click', function (e) {
+			const name = document.getElementById('name').value.trim();
+			const message = document.getElementById('message').value.trim();
 			const email = document.getElementById('email').value.trim();
-            // 이메일 유효성 검사를 위한 정규 표현식
-        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+			// 이메일 유효성 검사를 위한 정규 표현식
+			const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-if (!name || !message || !email) {
-	alert("이름, 메시지, 이메일을 모두 입력하세요.");
-	e.preventDefault(); // 폼 제출을 막습니다.
-} else if (!email.match(emailRegex)) {
-	alert("올바른 이메일 주소를 입력하세요.");
-	e.preventDefault(); // 폼 제출을 막습니다.
-} else {
-	// 제목을 따로 바꾸고자 하는 경우, window.alert 함수를 사용하세요.
-	window.alert("이메일이 발송되었습니다.", "타이틀");
-}
-        });
+			if (!name || !message || !email) {
+				alert("이름, 메시지, 이메일을 모두 입력하세요.");
+				e.preventDefault(); // 폼 제출을 막습니다.
+			} else if (!email.match(emailRegex)) {
+				alert("올바른 이메일 주소를 입력하세요.");
+				e.preventDefault(); // 폼 제출을 막습니다.
+			} else {
+				// 제목을 따로 바꾸고자 하는 경우, window.alert 함수를 사용하세요.
+				window.alert("이메일이 발송되었습니다.", "타이틀");
+			}
+		});
 
-		
-    </script>
+
+	</script>
 	<script>
 		// 커서 엘리먼트 선택
-	const cursor = document.querySelector('.cursor');
-	
-	// 마우스 이벤트를 감지하고 커서 위치를 업데이트
-	document.addEventListener('mousemove', (e) => {
-		cursor.style.left = e.pageX + 'px';
-		cursor.style.top = e.pageY + 'px';
-	});
+		const cursor = document.querySelector('.cursor');
+
+		// 마우스 이벤트를 감지하고 커서 위치를 업데이트
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left = e.pageX + 'px';
+			cursor.style.top = e.pageY + 'px';
+		});
 	</script>
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
