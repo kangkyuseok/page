@@ -12,7 +12,7 @@ exports.handler = async function(event, context) {
     service: 'gmail',
     auth: {
       user: 'gyuseoggang29@gmail.com',
-      pass: 'a23779159a@'
+      pass: 'd'
     }
   });
 
