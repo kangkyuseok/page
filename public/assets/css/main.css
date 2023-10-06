@@ -66,6 +66,14 @@
 
 /* Containers */
 
+    .container1 {
+	display: grid;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+	}
+
+
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -230,7 +238,31 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+		
 	}
+
+	.row1 {
+		border-bottom: solid 1px transparent;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.row1 > * {
+		
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+	img {
+		max-width: 100%; /* 이미지가 반응형으로 표시되도록 설정 */
+		height: auto; /* 비율이 유지되도록 높이 자동 조정 */
+		
+	}
+
+
 
 	.row > * {
 		float: left;
@@ -1835,6 +1867,7 @@
 		.box .image.fit {
 			margin: 0;
 			border-radius: 0;
+			
 		}
 
 			.box .image.fit img {
@@ -1894,7 +1927,54 @@
 		border-color: rgba(144, 144, 144, 0.25);
 	}
 
+	
+	
+	#three .brandsite {
+		position: absolute;
+		top: 0%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+	}
+	#three .brandsite_left {
+		position: absolute;
+		top: 0%;
+		left: 25%;
+		transform: translate(-50%, -50%);
+		font-size: 80px !important;
+		font-weight: bold; /* 글자 굵기 설정 */
+    	text-decoration: none; /* 밑줄 제거 */
+		color: black;
+	}
+	
+
+
+	#three .brandname {
+		background-color: black; /* 배경색을 검은색으로 지정 */
+		color: white !important; /* 텍스트 색을 흰색으로 지정 */
+		width: 200px;
+		height: 200px;
+		font-size: 16px;
+		font-weight: 700;
+	text-align: left; /* 텍스트를 왼쪽 정렬로 지정 */
+	line-height: 1.5rem !important;
+	
+
+	}
 /* Button */
+
+	.테두리 {
+		border: 3px solid;
+		color: black;
+		height: 200px;
+		max-width: 400px;
+	}
+
+	.테두리:hover {
+		background-color: gray;
+		filter: invert(100%);
+		
+	}
+
 
 	input[type="submit"],
 	input[type="reset"],
@@ -2344,6 +2424,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+		
 	}
 
 		.image img {
@@ -3132,6 +3213,81 @@
 			position: relative;
 		}
 
+		.wrapper.stylelifeborn {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url(../../images/brand/introimg/005.jpg);
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+			
+		}
+
+		.wrapper.stylerunmecy {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url(../../images/brand/introimg/009.png);
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+			
+		}
+
+		.wrapper.stylebrand {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url(../../images/brand/brandimg.jpg);
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+			height: 700px;
+			
+		}
+
+		#background-video1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content1 {
+			position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 1.5s ease-out;
+        }
+
+		.content1 h1 {
+			font-size: 36px;
+            display: inline-block;
+            margin: 0;
+        }
+
+		.content1 h1:nth-child(2) {
+            display: none;
+            color: #ff8c00;
+            font-weight: bold;
+        }
+
+        .content1.visible {
+
+            opacity: 1;
+        }
+
+
+
 			.wrapper.style3 input, .wrapper.style3 select, .wrapper.style3 textarea {
 				color: #ffffff;
 			}
@@ -3556,7 +3712,7 @@
 
 	.gallery {
 		width: 100%;
-		margin: 2.5rem 0 2.5rem 0;
+		margin: 2.5rem 2.5rem 2.5rem 2.5rem;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3738,7 +3894,7 @@
 	}
 
 	#header {
-		background: rgba(0, 0, 0, 0.975);
+		background: rgba(255, 255, 255, 0.975);
 		color: #a6a6a6;
 		cursor: default;
 		height: 3.25em;
@@ -3764,12 +3920,12 @@
 
 			#header > .logo a {
 				font-size: 1.25em;
-				color: #FFF;
+				color: #000000;
 				text-decoration: none;
 			}
 
 				#header > .logo a:hover {
-					color: rgba(255, 255, 255, 0.65);
+					color: rgba(255, 115, 0);
 				}
 
 			#header > .logo span {
@@ -3787,7 +3943,7 @@
 			padding: 0 0.75em;
 			color: inherit;
 			text-decoration: none;
-			color: #FFF;
+			color: #000000;
 		}
 		.animated-line {
 			height: 3px;
@@ -3809,7 +3965,7 @@
 		  }
 		  
 			#header > a:hover {
-				color: #f2f2f2;
+				color: #ff9203;
 			}
 
 			#header > a[href="#menu"] {
@@ -3913,6 +4069,7 @@
 		}
 
 	}
+
 
 /* Menu */
 
@@ -4330,8 +4487,8 @@
 /* Footer */
 
 	#footer {
-		padding: 4rem 0 2rem 0 ;
-		background: #000;
+		padding: 1rem 0 2rem 0 ;
+		background: #ffffff;
 		text-align: center;
 	}
 
@@ -4412,4 +4569,11 @@
   .hovered-link::after {
       background-image: url("../img/white_dot.svg");
   }
+  
+
+
+  .testdiv {
+	max-width: 400px;
+  }
+
   
