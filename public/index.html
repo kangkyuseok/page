@@ -34,26 +34,36 @@
 			</nav>
 		<!-- Banner -->
 		<video id="background-video1" autoplay loop muted>
-			<source src="../images/video2.mp4" type="video/mp4">
+			<!-- PC 버전에서 보여질 영상 -->
+			<source src="../images/video4.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
+		
+		<!-- 모바일 버전에서 보여질 영상 -->
+		<video id="background-video-mobile" autoplay loop muted style="width: 100%;">
+			<source src="../images/video3.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
 	
-		<div class="content1">
+		<!-- <div class="content1">
 			<h1 style="color: white;">더 밝은 세상을 위한</h1>
         	<h1>아이디어</h1>
-		</div>
+		</div> -->
 
 		<!-- Scripts -->
+
+
 		<script>
 			// 1.5초 후에 텍스트 변경
-			setTimeout(function() {
-				document.querySelector('.content1 h1:first-child').style.display = 'inline-block';
-				document.querySelector('.content1').classList.add('visible');
-			}, 1500);
-			setTimeout(function() {		
-				document.querySelector('.content1 h1:nth-child(2)').style.display = 'inline-block';
-				document.querySelector('.content1').classList.add('visible');
-			}, 5500);
+			// setTimeout(function() {
+			// 	document.querySelector('.content1 h1:first-child').style.display = 'inline-block';
+			// 	document.querySelector('.content1').classList.add('visible');
+			// }, 1500);
+			// setTimeout(function() {		
+			// 	document.querySelector('.content1 h1:nth-child(2)').style.display = 'inline-block';
+			// 	document.querySelector('.content1').classList.add('visible');
+			// }, 5500);
 		</script>
 			<script src="../src/App.js"></script>
 			<script src="assets/js/jquery.min.js"></script>

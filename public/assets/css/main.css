@@ -3251,12 +3251,56 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            max-width: 100%;
             height: 100%;
             object-fit: cover;
             z-index: -1;
         }
+		/* 공통 스타일 */
+        #background-video1 {
+            width: 100%;
+        }
 
+        /* PC 버전 스타일 */
+        @media only screen and (min-width: 768px) {
+            #background-video1 {
+                display: block; /* PC 버전에서 보이게 함 */
+            }
+        }
+
+        /* 모바일 버전 스타일 */
+        @media only screen and (max-width: 767px) {
+            #background-video1 {
+                display: none; /* 모바일 버전에서 숨김 */
+            }
+        }
+		
+
+		/* PC 버전 스타일 */
+        @media only screen and (min-width: 768px) {
+            #background-video-mobile {
+                display: none; /* PC 버전에서 보이게 함 */
+            }
+        }
+
+
+		
+			.content1 h1 {
+				font-size: 30px;
+				display: inline-block;
+				margin: 0;
+				top: 80%;
+				position: relative;
+			}
+	
+			.content1 h1:nth-child(2) {
+				display: none;
+				color: #ff8c00;
+				font-weight: bold;
+				top: 80%;
+				position: relative;
+			}
+		
         .content1 {
 			position: absolute;
             top: 50%;
