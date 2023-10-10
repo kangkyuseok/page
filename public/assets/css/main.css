@@ -3296,6 +3296,8 @@
         @media only screen and (min-width: 768px) {
             #background-video1 {
                 display: block; /* PC 버전에서 보이게 함 */
+				width: 100%;
+    height: auto;
             }
         }
 
@@ -3303,6 +3305,8 @@
         @media only screen and (max-width: 767px) {
             #background-video1 {
                 display: none; /* 모바일 버전에서 숨김 */
+				width: 100%;
+    height: auto;
             }
         }
 		
@@ -3311,6 +3315,8 @@
         @media only screen and (min-width: 768px) {
             #background-video-mobile {
                 display: none; /* PC 버전에서 보이게 함 */
+				width: 100%;
+    height: auto;
             }
         }
 
