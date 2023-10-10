@@ -1963,10 +1963,15 @@
 /* Button */
 
 	.테두리 {
+		
 		border: 3px solid;
 		color: black;
 		height: 200px;
 		max-width: 400px;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* 가운데 정렬을 위한 margin 설정 */
 	}
 
 	.테두리:hover {
