@@ -3247,6 +3247,32 @@
 			
 		}
 
+		.wrapper.stylebinggeul {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url(../../images/brand/binggeul/004.jpg);
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+			height: 700px;
+			
+		}
+
+		.wrapper.styleeverybottle {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url(../../images/brand/everybottle/main.jpg);
+			background-size:cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+			height: 700px;
+			
+		}
+
+
+		
 		#background-video1 {
             position: fixed;
             top: 0;
