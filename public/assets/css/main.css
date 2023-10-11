@@ -3529,7 +3529,7 @@ table.alt tbody tr td {
 .wrapper.stylerunmecy {
 	background-color: #000;
 	color: #bfbfbf;
-	background-image: url(../../images/brand/introimg/009.png);
+	background-image: url(../../images/brand/runmecy/03.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -3552,7 +3552,7 @@ table.alt tbody tr td {
 .wrapper.stylebinggeul {
 	background-color: #000;
 	color: #bfbfbf;
-	background-image: url(../../images/brand/binggeul/004.jpg);
+	background-image: url(../../images/brand/binggeul/main.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -3573,6 +3573,17 @@ table.alt tbody tr td {
 
 }
 
+.wrapper.stylesquall {
+	background-color: #000;
+	color: #bfbfbf;
+	background-image: url(../../images/brand/squall/main.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	height: 700px;
+
+}
 
 
 #background-video1 {
