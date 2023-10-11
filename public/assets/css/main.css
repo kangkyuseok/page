@@ -2156,6 +2156,20 @@ hr {
 	color: black;
 }
 
+@media (max-width:767px) {
+	#three .brandsite_left {
+		position: absolute;
+		top: 0%;
+		left: 35%;
+		
+		font-size: 65px !important;
+		font-weight: bold;
+		/* 글자 굵기 설정 */
+		text-decoration: none;
+		/* 밑줄 제거 */
+		color: black;
+	}
+}
 
 
 #three .brandname {
@@ -4062,6 +4076,30 @@ table.alt tbody tr td {
 	-ms-align-items: stretch;
 	align-items: stretch;
 }
+
+.gallery1 {
+	width: 100%;
+	margin: 0;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr); /* 2행 */
+	grid-template-columns: repeat(3, 1fr); /* 3열 */
+	
+	text-align: center;
+  }
+
+/* 모바일 화면에서 더 적절한 간격을 적용할 수 있는 추가적인 스타일 */
+@media (max-width: 767px) {
+	.gallery1 {
+		grid-template-rows: repeat(2, 1fr); /* 3행으로 변경 */
+		grid-template-columns: repeat(3, 1fr); /* 2열로 변경 */
+		gap: 0.5rem; /* 모바일에서 더 좁은 간격 적용 */
+		
+	}
+	 /* 모바일에서 이미지 높이를 조절 */
+	 .gallery1 img {
+		height: 100%; /* 높이를 100%로 설정하거나 다른 값을 지정 */
+	  }
+  }
 
 .gallery>* {
 	-moz-flex-shrink: 1;
