@@ -347,6 +347,17 @@ body {
 	box-sizing: border-box;
 	text-align: center;
 }
+@media (max-width: 767px) {
+	.row1 {
+	  flex-direction: row; /* 이미지를 가로로 배치하도록 설정 */
+	}
+  
+	.row1 img {
+	  width: calc(33.333% - 10px); /* 이미지를 가로로 3개 배치하기 위해 각 이미지의 너비를 33.333%로 설정 */
+	  margin-bottom: 10px;
+	}
+  }
+
 
 .row1>* {
 
@@ -2160,7 +2171,7 @@ hr {
 	#three .brandsite_left {
 		position: absolute;
 		top: 0%;
-		left: 35%;
+		left: 50%;
 		
 		font-size: 65px !important;
 		font-weight: bold;
@@ -2171,7 +2182,26 @@ hr {
 	}
 }
 
+/* 모바일 화면에 대한 추가 스타일 */
+@media (max-width: 767px) {
+	#One h2 {
+	  font-size: 30px !important; /* 모바일 화면에서 글자 크기를 30px로 설정 */
+	}
+  }
 
+  .텍스트 {
+	position: absolute;
+	top: 50%; /* 이미지 상단 중앙으로 위치 */
+	left: 50%; /* 이미지 왼쪽 중앙으로 위치 */
+	transform: translate(-50%, -50%); /* 이미지 중앙으로 정렬 */
+	font-size: 12px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5); /* 텍스트에 배경 색상 및 투명도 추가 */
+	padding: 10px;
+	border-radius: 5px;
+  }
 
 #three .brandname {
 	background-color: black;
@@ -2185,8 +2215,22 @@ hr {
 	text-align: left;
 	/* 텍스트를 왼쪽 정렬로 지정 */
 	line-height: 1.5rem !important;
+}
 
-
+@media (max-width:767px) {
+	#three .brandname {
+		background-color: black;
+	/* 배경색을 검은색으로 지정 */
+	color: white !important;
+	/* 텍스트 색을 흰색으로 지정 */
+	width: 100px;
+	height: 100px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	/* 텍스트를 왼쪽 정렬로 지정 */
+	line-height: 1.5rem !important;
+	}
 }
 
 /* Button */
