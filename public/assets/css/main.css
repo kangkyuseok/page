@@ -5014,9 +5014,10 @@ html {
 }
 
 /* 기본 스타일 */
-.google-map-container {
-	width: 100%;
-	margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+@media (max-width: 767px) {
+	.google-map-container {
+	  overflow: hidden;
+	}
   }
   
   #google_map {
