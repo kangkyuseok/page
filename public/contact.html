@@ -79,6 +79,14 @@
 
 					<div class="form-elements">
 						<fieldset class="pure-group">
+							<label for="inquiryType">Inquiry Type:</label>
+							<select id="inquiryType" name="inquiryType">
+								<option value="광고문의">광고 문의</option>
+								<option value="회사문의">회사 문의</option>
+								
+							</select>
+						</fieldset>
+						<fieldset class="pure-group">
 							<label for="name">Name: </label>
 							<input id="name" name="name" placeholder="성함" />
 						</fieldset>
@@ -92,7 +100,7 @@
 							<label for="email"><em>Your</em> Email Address:</label>
 							<input id="email" name="email" type="email" value="" required placeholder="답변 받으실 이메일" />
 						</fieldset>
-
+						
 
 
 						<button class="button-success pure-button button-xlarge" id="submitButton">
@@ -137,6 +145,7 @@
 			const name = document.getElementById('name').value.trim();
 			const message = document.getElementById('message').value.trim();
 			const email = document.getElementById('email').value.trim();
+			const inquiryType = document.getElementById('inquiryType').value.trim();
 			// 이메일 유효성 검사를 위한 정규 표현식
 			const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
