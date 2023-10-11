@@ -146,12 +146,12 @@ body {
 
 /* google map */
 /* 모바일 화면에서의 크기  뀨 수정*/
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 	#google_map {
 		width: 360px;
 		height: 360px;
 	}
-}
+} */
 
 /* Box Model */
 
@@ -2170,6 +2170,7 @@ hr {
 		color: black;
 	}
 }
+
 
 
 #three .brandname {
@@ -4967,3 +4968,22 @@ html {
 .testdiv {
 	max-width: 400px;
 }
+
+/* 기본 스타일 */
+.google-map-container {
+	width: 100%;
+	margin: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+  
+  #google_map {
+	width: 100%;
+	height: 450px; /* 기본 높이 설정 */
+	border: 0;
+  }
+  
+  /* 모바일 화면에 대한 추가 스타일 */
+  @media (max-width: 767px) {
+	#google_map {
+	  height: 300px; /* 작은 휴대폰 화면에 대한 높이 설정 */
+	}
+  }
