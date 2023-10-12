@@ -33,17 +33,21 @@
 				</ul>
 			</nav>
 		<!-- Banner -->
-		<video id="background-video1" autoplay loop muted>
+		<video id="background-video1" autoplay loop muted onclick="videoClicked()">
 			<!-- PC 버전에서 보여질 영상 -->
 			<source src="../images/videomain.mp4" type="video/mp4">
 		</video>
 		
 		<!-- 모바일 버전에서 보여질 영상 -->
-<video id="background-video-mobile-container" autoplay loop muted>
+<video id="background-video-mobile-container" autoplay loop muted onclick="videoClicked()">
 	<source id="background-video-mobile" src="../images/videomobile.mp4" type="video/mp4">
   </video>
   
-
+  <script>
+	function videoClicked() {
+	  window.location.href = '/brand.html'; // 이동할 페이지의 URL로 변경
+	}
+  </script>
 	
 		<!-- <div class="content1">
 			<h1 style="color: white;">더 밝은 세상을 위한</h1>
