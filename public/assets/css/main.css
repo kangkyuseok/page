@@ -3540,7 +3540,7 @@ table.alt tbody tr td {
 .wrapper.stylebrand {
 	background-color: #000;
 	color: #bfbfbf;
-	background-image: url(../../images/brand/brandimg.jpg);
+	background-image: url(../../images/brand/brandimg1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -4961,13 +4961,38 @@ body.is-mobile .banner>article {
 	text-align: center;
 }
 
-@media screen and (max-width: 736px) {
+/* 기존 스타일 유지 */
+@media only screen and (max-width: 767px) {
 
-	#footer p{
-		margin-left: 10px !important;
+	.container1 dl.row {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start; /* 왼쪽 정렬로 변경 */
 	}
-
-}
+  
+	.container1 dl.row p {
+	  text-align: left;
+	  
+	}
+  
+	.container1 dl.row p:first-child {
+	  margin-left: 0;
+	}
+	
+	/* 새로 추가한 스타일 */
+	.container1 dl.row {
+	  margin-top: 0; /* 기본적인 margin-top을 0으로 설정 */
+	}
+  
+	.container1 dl.row p {
+	  margin: 0; /* p 태그의 margin을 0으로 설정 */
+	  width: 100%; /* p 태그가 부모 요소의 전체 너비를 차지하도록 설정 */
+	  margin-left: 30px;
+	}
+  }
+  
+  
+  
 
 
 #footer a {
@@ -4995,13 +5020,171 @@ body.is-mobile .banner>article {
 	color: #FFF;
 }
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
 
 	#footer {
 		padding: 3rem 0 1rem 0;
 	}
 
+} */
+
+/* BINGGEUL */
+#brand-binggeul p {
+	color: black; /* 첫 번째 p 태그는 검정색 */
+	text-align: left;
+	padding-left: 85px;
+	margin:0px;
+	font-size: 36px;
+  }
+  
+  /* #brand-p 내의 두 번째 p 태그 스타일 */
+  #brand-binggeul p:nth-child(2) {
+	color: rgb(25, 92, 252); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+	font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+  }
+
+  @media screen and (max-width: 736px) {
+	#brand-binggeul p {
+		padding:0;
+		font-size: 18px;
+	  }
+	  
+	  /* #brand-p 내의 두 번째 p 태그 스타일 */
+	  #brand-binggeul p:nth-child(2) {
+		color: rgb(25, 92, 252); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+		font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+	  }
+
 }
+
+
+
+
+
+/* RUNMECY */
+#brand-runmecy p {
+	color: black; /* 첫 번째 p 태그는 검정색 */
+	text-align: left;
+	padding-left: 85px;
+	margin:0px;
+	font-size: 36px;
+  }
+  
+  /* #brand-p 내의 두 번째 p 태그 스타일 */
+  #brand-runmecy p:nth-child(2) {
+	color: rgb(161, 39, 181); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+	font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+  }
+
+  @media screen and (max-width: 736px) {
+	#brand-runmecy p {
+		padding:0;
+		font-size: 18px;
+	  }
+	  
+	  /* #brand-p 내의 두 번째 p 태그 스타일 */
+	  #brand-runmecy p:nth-child(2) {
+		color: rgb(161, 39, 181); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+		font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+	  }
+
+}
+
+
+
+/* 생활본책 */
+#brand-lifeborn p {
+	color: black; /* 첫 번째 p 태그는 검정색 */
+	text-align: left;
+	padding-left: 85px;
+	margin:0px;
+	font-size: 36px;
+  }
+  
+  /* #brand-p 내의 두 번째 p 태그 스타일 */
+  #brand-lifeborn p:nth-child(2) {
+	color: rgb(171, 146, 143); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+	font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+  }
+
+  @media screen and (max-width: 736px) {
+	#brand-lifeborn p {
+		padding:0;
+		font-size: 18px;
+	  }
+	  
+	  /* #brand-p 내의 두 번째 p 태그 스타일 */
+	  #brand-lifeborn p:nth-child(2) {
+		color: rgb(171, 146, 143); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+		font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+	  }
+
+}
+
+  /* 에브리보틀 */
+#brand-everybottle p {
+	color: black; /* 첫 번째 p 태그는 검정색 */
+	text-align: left;
+	padding-left: 85px;
+	margin:0px;
+	font-size: 36px;
+  }
+  
+  /* #brand-p 내의 두 번째 p 태그 스타일 */
+  #brand-everybottle p:nth-child(2) {
+	color: rgb(255, 126, 32); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+	font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+  }
+
+  @media screen and (max-width: 736px) {
+	#brand-everybottle p {
+		padding:0;
+		font-size: 18px;
+	  }
+	  
+	  /* #brand-p 내의 두 번째 p 태그 스타일 */
+	  #brand-everybottle p:nth-child(2) {
+		color: rgb(255, 126, 32); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+		font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+	  }
+
+}
+
+  
+  /* squall */
+#brand-squall p {
+	color: black; /* 첫 번째 p 태그는 검정색 */
+	text-align: left;
+	padding-left: 85px;
+	margin:0px;
+	font-size: 36px;
+  }
+  
+  /* #brand-p 내의 두 번째 p 태그 스타일 */
+  #brand-squall p:nth-child(2) {
+	color: rgb(9, 71, 16); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+	font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+  }
+
+  @media screen and (max-width: 736px) {
+	#brand-squall p {
+		padding:0;
+		font-size: 18px;
+	  }
+	  
+	  /* #brand-p 내의 두 번째 p 태그 스타일 */
+	  #brand-squall p:nth-child(2) {
+		color: rgb(9, 71, 16); /* 두 번째 p 태그의 색상 설정 (예시: RGB(0, 0, 0)은 검정색) */
+		font-weight: bold; /* 두 번째 p 태그는 굵게 설정 */
+	  }
+
+}
+
+
+
+
+
+
 
 
 
