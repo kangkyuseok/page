@@ -5043,7 +5043,7 @@ body.is-mobile .banner>article {
 #brand-binggeul p {
 	color: black; /* 첫 번째 p 태그는 검정색 */
 	text-align: left;
-	padding-left: 85px;
+	
 	margin:0px;
 	font-size: 36px;
   }
