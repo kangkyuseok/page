@@ -3529,13 +3529,22 @@ table.alt tbody tr td {
 .wrapper.stylerunmecy {
 	background-color: #000;
 	color: #bfbfbf;
-	background-image: url(../../images/brand/runmecy/03.jpg);
+	background-image: url(../../images/brand/runmecy/03.png);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	position: relative;
 
 }
+/* @media (max-width: 767px) {
+	.wrapper.stylerunmecy {
+		
+		background-image: url(../../images/brand/runmecy/03.png);
+		background-clip: border-box;
+		background-size: contain;
+	}
+  } */
+
 
 .wrapper.stylebrand {
 	background-color: #000;
