@@ -4184,6 +4184,7 @@ table.alt tbody tr td {
 /* 모바일 화면에서 더 적절한 간격을 적용할 수 있는 추가적인 스타일 */
 @media (max-width: 767px) {
 	.gallery1 {
+		
 		grid-template-rows: repeat(3, 1fr); /* 3행으로 변경 */
 		grid-template-columns: repeat(2, 1fr); /* 2열로 변경 */
 		gap: 0.5rem; /* 모바일에서 더 좁은 간격 적용 */
@@ -4191,6 +4192,7 @@ table.alt tbody tr td {
 	}
 	 /* 모바일에서 이미지 높이를 조절 */
 	 .gallery1 img {
+
 		height: 100%; /* 높이를 100%로 설정하거나 다른 값을 지정 */
 	  }
   }
