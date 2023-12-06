@@ -419,7 +419,6 @@ img {
 }
 
 .row>* {
-	font-weight: 400;
 	padding: 0 0 0 2rem;
 }
 
@@ -4981,7 +4980,6 @@ body.is-mobile .banner>article {
 /* Footer */
 
 #footer {
-	
 	padding: 1rem 0 2rem 0;
 	background: #ffffff;
 	text-align: center;
@@ -5017,7 +5015,6 @@ body.is-mobile .banner>article {
 
 
 #footer a {
-	
 	color: rgba(255, 255, 255, 0.5);
 }
 
