@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
 /*
 	Hielo by TEMPLATED
@@ -1867,7 +1867,7 @@ body,
 input,
 select,
 textarea {
-	font-family: "Poppins", sans-serif;
+	font-family: 'GmarketSans';
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.65;
@@ -1896,12 +1896,8 @@ p {
 }
 
 p.special {
-	text-transform: uppercase;
-	font-size: .75rem;
-	font-weight: 300;
-	margin: 0 0 .5rem 0;
-	padding: 0 0 1rem 0;
-	letter-spacing: .25rem;
+	font-family: 'GmarketSans';
+	font-weight: 100;
 }
 
 p.special:after {
@@ -1979,7 +1975,7 @@ blockquote {
 code {
 	border-radius: 2px;
 	border: solid 1px;
-	font-family: "Courier New", monospace;
+	font-family: 'GmarketSans';
 	font-size: 0.9rem;
 	margin: 0 0.25rem;
 	padding: 0.25rem 0.65rem;
@@ -1987,7 +1983,7 @@ code {
 
 pre {
 	-webkit-overflow-scrolling: touch;
-	font-family: "Courier New", monospace;
+	font-family: 'GmarketSans';
 	font-size: 0.9rem;
 	margin: 0 0 2rem 0;
 }
@@ -2493,7 +2489,7 @@ textarea:invalid {
 .select-wrapper:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: 'GmarketSans';
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -2557,7 +2553,7 @@ input[type="checkbox"]+label:before,
 input[type="radio"]+label:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: 'GmarketSans';
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -2692,7 +2688,7 @@ input[type="radio"]:focus+label:before {
 .icon:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: 'GmarketSans';
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -4466,7 +4462,7 @@ body.subpage {
 	content: "";
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: 'GmarketSans';
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -4648,7 +4644,7 @@ body.subpage {
 #menu .close:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: 'GmarketSans';
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -5297,3 +5293,5 @@ html {
 	  height: 300px; /* 작은 휴대폰 화면에 대한 높이 설정 */
 	}
   }
+
+

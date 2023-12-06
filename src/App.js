@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = 3000;
-
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
